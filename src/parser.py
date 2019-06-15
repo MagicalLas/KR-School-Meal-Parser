@@ -19,8 +19,8 @@ def save_to_json(result, name="result.json"):
     logging.info(f"Started saving json file as {name}.")
 
     try:
-        with open(name, "w") as f:
-            json.dump(result, f)
+        with open(name, "w", encoding="UTF-8") as f:
+            json.dump(result, f, ensure_ascii=True, indent=4)
     except Exception as e:
         logging.error(e)
     else:

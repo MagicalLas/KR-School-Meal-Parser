@@ -138,6 +138,20 @@ menus = parser.get_menu()
 print(menus.today)
 ```
 
+- 원하는 날짜의 1개월 식단표
+
+```Python
+from menu_parser import MenuParser
+from school import School
+
+
+school = School(School.Region.GWANGJU, School.Type.HIGH, "F100000120")
+parser = MenuParser(school)
+menus = parser.get_menu(2019, 5)
+
+print(menus)
+```
+
 - JSON 파일로 저장하기
 
 ```Python

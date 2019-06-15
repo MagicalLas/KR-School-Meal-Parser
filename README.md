@@ -114,7 +114,9 @@ print(menus)
         "dinner": []
     },
 
-    ...
+    "..." : {
+        "..."
+    },
 
     "30": {
         "breakfast": [],
@@ -155,7 +157,7 @@ print(menus)
 - JSON 파일로 저장하기
 
 ```Python
-from menu_parser import MenuParser
+from menu_parser import MenuParser, save_to_json
 from school import School
 
 
